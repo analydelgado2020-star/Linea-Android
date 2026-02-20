@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Timeline Android & iOS PRO</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- PANTALLA 1 -->
+<section id="screen1" class="screen active">
+    <!-- TU IMAGEN DE FONDO EN CSS -->
+    <div class="overlay">
+        
+        <img src="imagenes/logo.png" class="logo">
+        <h1>¡Vamos a comenzar!</h1>
+        <button class="mainBtn" onclick="goToTimeline()">PLAY</button>
+        <img src="https://developer.android.com/static/images/shared/pointing-1.gif"
+     class="introGif">
+    </div>
+</section>
+
+<!-- PANTALLA 2 -->
+<section id="screen2" class="screen">
+    <h2>Android & iOS Timeline</h2>
+
+    <div class="race-container">
+        <svg id="raceTrack" viewBox="0 0 1200 400">
+            <path id="trackPath"
+                d="M50,250 
+                   C200,100 400,400 600,200 
+                   S900,100 1150,250"
+                stroke="#444"
+                stroke-width="40"
+                fill="none"
+                stroke-linecap="round"/>
+        </svg>
+
+        <img id="car" src="imagenes/carrito.png" alt="carro">
+    </div>
+
+    <!-- SOLO ESTE BOTÓN AL INICIO -->
+    <div class="controls">
+        <button id="playBtn" onclick="playAuto()">▶ Play</button>
+    </div>
+
+    <!-- CUADRO DE INFORMACIÓN (OCULTO AL INICIO) -->
+   <div id="infoBox" class="infoBox" style="display:none;">
+
+    <div class="infoContent">
+        <div class="textSide">
+            <h3 id="title"></h3>
+            <p id="description"></p>
+        </div>
+
+        <div class="imageSide">
+            <img id="extraImage" src="" alt="">
+        </div>
+    </div>
+
+    <div class="infoButtons">
+        <button id="backBtn" onclick="previousStop()" style="display:none;">⬅ Regresar</button>
+        <button id="nextBtn" onclick="nextStop()" style="display:none;">⏭ Siguiente</button>
+        <button id="finishBtn" onclick="goToEnd()" style="display:none;">Finalizar 🏁</button>
+    </div>
+
+</div>
+
+</section>
+
+<!-- PANTALLA 3 -->
+<section id="screen3" class="screen">
+    <!-- TU IMAGEN FINAL EN CSS -->
+    <div class="overlay">
+        <h1>¡Línea del Tiempo Completada!</h1>
+        
+        <button class="mainBtn" onclick="restart()">Volver al Inicio</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.screen{
+    width:100vw;
+    height:100vh;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:absolute;
+}
+
+.active{
+    display:flex;
+}
+
+.overlay{
+    text-align:center;
+}
+
+.mainBtn{
+    padding:15px 40px;
+    font-size:20px;
+    background:black;  
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.mainBtn:hover{
+    background:#005fa3;
+}
+
+.race-container{
+    position:relative;
+    width:100%;
+    height:400px;
+}
+
+#raceTrack{
+    width:100%;
+    height:100%;
+}
+
+#car{
+    position:absolute;
+    left:0;          /* empieza en la izquierda */
+    top:55%;         /* ajusta según tu línea curva */
+    transform:translateY(-50%);
+}
+.controls{
+    margin-top:20px;
+}
+
+.controls button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:#333;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button{
+    padding:15px 30px;
+    margin:5px;
+    border:none;
+    background:black;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.infoBox{
+    background:white;
+    width:60%;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+    display:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.infoBox img{
+    width:150px;
+    margin-top:10px;
+}
+
+.infoButtons{
+    margin-top:15px;
+}
+
+.infoButtons button{
+    padding:8px 15px;
+    margin:5px;
+    border:none;
+    background:#0077cc;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.infoButtons button:hover{
+    background:#005fa3;
+}
+
+.introGif {
+    width: 580px;
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo{
+    display:block;
+    margin:30px auto 20px auto;  /* centrado */
+    width:280px;                 /* tamaño */
+}
+
+.backgroundGif{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;      /* ocupa todo */
+    z-index:0;             /* atrás de todo */
+    opacity:0.3;           /* opcional para que no opaque texto */
+}
+#screen1{
+    position:relative;
+    min-height:100vh;
+
+    background-image: url("https://img.genial.ly/5fc774f2a00ba10f81afbca5/f08a0456-78fd-4fed-9aa3-e5322ee2b044.gif");
+    background-size: cover;      /* ocupa toda la pantalla */
+    background-position: bottom; /* se queda abajo */
+    background-repeat: no-repeat;
+}
+#screen2{
+    position: relative;
+    min-height: 50vh;
+    height: auto; 
+
+    background-image: url("https://img.genial.ly/5fc774f2a00ba10f81afbca5/f08a0456-78fd-4fed-9aa3-e5322ee2b044.gif");
+    background-size: cover;
+    background-position: center bottom; 
+    background-repeat: no-repeat;
+}
+#screen3{
+    position:relative;
+    min-height:100vh;
+
+    background-image: url("https://img.genial.ly/5fc774f2a00ba10f81afbca5/f08a0456-78fd-4fed-9aa3-e5322ee2b044.gif");
+    background-size: cover;      /* ocupa toda la pantalla */
+    background-position: bottom; /* se queda abajo */
+    background-repeat: no-repeat;
+}
+.infoContent{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.textSide{
+    width:50%;
+}
+
+.imageSide{
+    width:50%;
+    display:flex;
+    justify-content:center;
+}
+
+.imageSide img{
+    width:100%;
+    max-width:250px;
+    border-radius:10px;
+}
